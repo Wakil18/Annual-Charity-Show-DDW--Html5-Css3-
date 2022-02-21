@@ -1,0 +1,1255 @@
+body {
+    font: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* only nav bar */
+
+/*
+header .nav_container{
+    background-color: aqua;
+}
+*/
+
+
+/* Common */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .container{
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sign_button {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 3px;
+    color: #ffffff;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    word-spacing: 2px;
+}
+
+.darkevents {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.darkevents a{
+    text-decoration: none;
+    color: tomato;
+}
+
+span.darkheading {
+    font-size: 22px;
+    border-bottom: 2px solid #e8491d;
+    text-transform: uppercase;
+}
+
+
+/* community*/
+
+section#signin{
+    background: url(../img/login.jpg) no-repeat fixed;
+    background-size: cover;    
+    font-family: quicksand, sans-serif;
+/*    min-height: 400px;*/
+    border: 0px;
+
+    display: flex;
+}
+
+section#signin div.formarea{
+/*    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    width:28%;
+    height: 600px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    padding: 3em;
+    border-radius: 8px;
+    margin: 4.5em;
+    margin-top: 3em;
+}
+
+section#signin div.formarea h3{
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+section#signin div.formarea p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+section#signin div.formarea input, select{
+    margin-bottom: 30px;
+    width: 100%
+}
+
+
+section#signin div.formarea input[type=email],
+section#signin div.formarea input[type=password], 
+section#signin div.formarea input[type=text]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    height: 45px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+section#signin div.formarea input[type=text]{
+    margin-top: 25px;
+}
+
+
+section#signin div.formarea input::placeholder{
+    color: #ffffff;
+}
+
+
+section#signin div.formarea input[type=submit]{
+    border: none;
+    height: 42px;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: tomato;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 0em;
+}
+
+
+section#signin div.formarea input[type=submit]:hover{
+    background-color: #39dc79;
+    color: black;
+}
+
+section#signin div.formarea a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+/* Community Comment */
+
+div.comcontainer{
+    width: 50%;
+    margin: 3em;
+}
+
+div.comcontainer ul,li{
+    list-style: none;
+}
+
+em{
+    font-size: 0.75em;
+    color: chocolate;
+}
+
+ul.nestedcomment li{
+    margin-left: 3em;
+}
+
+div.comment{
+    background: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: #ffffff
+    
+}
+
+ul.nestedcomment li ul{
+    border-left: 1px solid black; 
+    position: relative;
+}
+
+
+ul.nestedcomment li ul::before{
+    content: '';
+    border-bottom: 1px solid black;
+    position: absolute;
+    width: 2em;
+    top: 2em;
+}
+
+
+#signin div img{
+    width: 65%;
+    display: flex;
+    border: 2px solid #ffffff;
+}
+
+ul.nestedcomment span{
+    font-size: 18px;
+    font-style:italic;
+    font-weight: bold;
+    color: #e8421d;
+}
+
+#signin div img.tshirt{
+    height: 290px;
+    width: 45%;
+}
+
+#signin div a.name{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+#signin div input[type=text]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    height: 25px;
+    width: 70%;
+    color: #ffffff;
+}
+
+
+#signin div input[type=text]::placeholder{
+    color: #ffffff;
+}
+
+#signin div input[type=submit]{
+    border: none;
+    height: 35px;
+    width: 18%;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 2em;
+}
+
+#signin div a.reply{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Header Area */
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 90px;
+    border-bottom: #e8491d 4px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    font-family: sans-serif;
+    padding: 0;
+}
+
+header #branding h1 {
+    margin: 0px;
+    padding: 0px;
+/*    margin-left: 20px;*/
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.page-title{
+    text-align: center;
+}
+
+
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    background: url('../img/catsanddogs.jpg') no-repeat 0 -420px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h3 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #252728;
+    letter-spacing: 2px;
+}
+
+#showcase p {
+    font-size: 22px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#showcase .viewmore{
+    height: 39px;
+    background: #0BB5FF; 
+    border: 0;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#showcase .viewmore:hover{
+    background: #00EE76;
+    transition: 400ms;
+}
+
+
+/* Newsletter */
+
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#newsletter h3 {
+    float: left;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 1.5em;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input {
+    padding: 6px;
+    height: 25px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 22%;
+    padding: 12px;
+
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+
+/* Sidebar */
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+
+#sidebar button.donateusnow{
+    width: 98%;
+    padding: 12px 8px;
+    text-align: center;
+    color: white;
+    background-color:tomato;
+    margin-left: 4px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+aside .shelterslink {
+    background-color: #ffffff;
+    border: #e8491d solid 2px;
+    border-radius: 25px;
+    margin-top: 15px;
+    padding: 15px 20px;
+    color: #e8491d;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    transition-duration: 300ms;
+    cursor: /*url('../img/shelters.png'),*/
+    pointer;
+
+}
+
+aside .shelterslink:hover {
+    background-color: #e8491d;
+    color: #ffffff;
+}
+
+
+
+/* Main-col */
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+
+ul.shelter {
+    font-size: 20px;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+p.shelter {
+    list-style: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: none;
+    background-color: #cccccc;
+    padding: 50px;
+    margin: 10px 30px 10px 30px;
+    border: #35424a solid 1px;
+    border-radius: 10px;
+    display: flex;    
+}
+
+p.shelter img{
+    width:40%;
+    height: 30%;
+}
+
+
+span.shelterlocation {
+    /*border-bottom: 3px solid #e8491d;*/
+    font-weight: 600;
+    padding: 10px;
+    border-right: 20px;
+    background-color: #e8491d;
+    color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 60px 30px 40px 30px;
+}
+
+
+/* Services */
+
+ul#fund li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 20px;
+    background: #e6e6e6;
+}
+
+
+/* News & Reviews */
+
+.news h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.news video{
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0px;
+    width: 60%;
+    height: 420px;
+}
+
+/*
+.undervideo{
+    width: 90%;
+}
+*/
+
+.underarticle{
+    width: 90%
+}
+
+
+.news article h3{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+}
+
+.news article{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.news article div p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #111;
+    text-transform: uppercase;
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+#totalnews{
+    margin: 40px auto 0 auto;
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+
+
+.shelters-news{
+    width: 30%;
+}
+
+
+/*
+.shelters-news:last-child{
+}
+*/
+
+
+
+.shelters-news div img{
+    width:100%;
+}
+
+
+.shelters-news div .citydate{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+
+.shelters-news .complete{
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+
+/*
+.shelters-news div h3{
+    margin: 5px;
+}
+*/
+
+
+.shelters-news div p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.newscomment{
+    display: flex;
+    justify-content: space-around;
+}
+
+.shelters-news div p input[type="text"]{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    height: 25px;
+    width: 70%;
+    color: black;
+}
+
+.shelters-news div p input[type="submit"]{
+    padding: 7px 9px;
+    margin-left: 8px;
+    background-color: crimson;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.shelters-news div a{
+    text-decoration: none;
+    padding: 4px;
+/*    border: 1px solid crimson;*/
+    background-color:  chartreuse;
+    border-radius: 4px;
+    color: black;
+}
+
+.shelters-news div .citydate .cityname1{
+    background-color: coral;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname2{
+    background-color: crimson;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname3{
+    background-color: dodgerblue;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname4{
+    background-color: yellowgreen;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname5{
+    background-color: yellow;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname6{
+    background-color: darkorchid;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname7{
+    background-color: teal;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shelters-news div .citydate .cityname8{
+    background-color: chartreuse;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.shelters-news div .citydate .cityname9{
+    background-color: lightcoral;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+/* Tools & Calculators */
+
+/*
+.total_tools_page{
+    background: linear-gradient(140deg,#fffdd1, #07e2f4 ,#fffdd1);
+    border-bottom: 0px;
+}
+*/
+
+.total_tools_page{
+    background: url(../img/Labrador-Dog-At-Sunset-Desktop-HD-Wallpaper.jpeg) no-repeat fixed;
+    background-size: cover;    
+    font-family: quicksand, sans-serif;
+/*    min-height: 400px;*/
+    border: 0px;
+}
+
+
+.animalcost{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+/*    background-color: antiquewhite;*/
+}
+
+
+/*
+.animalcost img{
+    width: 50%;
+    margin: 5em 0;
+    border: 2px solid black;
+}
+*/
+
+
+.animalcost div{
+    padding: 3em;
+/*
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc;
+*/
+    margin: 4.9em 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 4px;
+}
+
+.animalcost h2{
+    text-align: center;
+}
+
+.animalcost h3{
+    color:aqua;
+    text-align: center;
+    font-size: 22px;
+}
+
+.animalcost div p{
+    font-size: 18px;
+}
+
+.costpara{
+    margin-top: 40px;
+}
+
+
+
+.calculation{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 25%;
+    padding: 2em;
+    margin: 0 auto;
+    justify-content: space-between;    
+}
+
+.calculation h3{
+    text-align: center;
+    font-size: 19px;
+    color: white;
+}
+
+.calculation p{
+    margin-bottom: 5px;
+}
+
+
+.calculation select{
+    margin-bottom: 0px;
+    width: 100%;
+    height: 32px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: 0;
+    border-radius: 3px;
+}
+
+.calculation input[type="number"]{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 32px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.calculation input[type="button"]{
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 25%;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+.calculation input[type="text"]{
+    text-align: center;
+    width: 95%;
+    line-height: 25px;
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.calculation input::placeholder{
+    color: #ffffff;
+    font-size: 16px
+}
+
+
+
+
+
+/* Join Us */
+
+
+
+/* join us newsletter */
+
+#joinnews{
+    background: #35424a;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    border-top: 4px solid #f0edba;
+    border-bottom: 4px solid #f0edba;
+}
+
+
+#joinnews h2{
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+
+#joinnews form{
+    margin-bottom: 15px;
+}
+
+#joinnews input{
+    padding: 6px;
+    height: 25px;
+    width: 250px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#joinnews button{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 3px;
+    color: #ffffff;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.newsandsign{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: linear-gradient(110deg,#f0edba, #e52f2f, #f0edba);
+}
+
+section .subscribenews{
+    background-color: #35424a;
+    padding: 20px;
+    width: 20%;
+    height: 300px;
+    border-radius: 4px;
+    margin-top: 4.5em;
+    color: white;
+/*    margin-left: 4.5em;*/
+}
+
+section .subscribenews h3{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+section .subscribenews input[type="email"]{
+    width: 100%;
+    margin-bottom: 50px;
+    line-height: 40px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+section .subscribenews button{
+    line-height: 35px;
+    width: 100%;
+    padding: 5px;
+    background-color: tomato;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section .subscribenews a{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* join us Sign Up */
+
+.newaccount{
+    background-color: #35424a;
+    padding: 3em;
+    border-radius: 5px;
+    margin: 4.5em;
+    color: white;
+    width: 25%;
+}
+
+.newaccount h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+.newaccount p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newaccount input[type=text],
+.newaccount input[type=password],
+.newaccount input[type=date]{
+    width: 100%;
+    line-height: 35px;
+    border: 0px;
+}
+
+.newaccount input[type=radio]{
+    cursor: pointer;
+}
+
+.newaccount input[type=checkbox]{
+    cursor: pointer;
+}
+
+.newaccount input[type=submit]{
+    padding: 10px;
+    letter-spacing: 2px;
+    width: 100%;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    background-color: turquoise;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newaccount input[type=submit]:hover{
+    background-color: tomato;
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+.newaccount .chkbx{
+    color: tomato;
+    font-size: 19px;
+}
+
+.newaccount a{
+    text-decoration: underline;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+/* Dropdown Menu */
+    
+
+.container ul li a {
+	display:block;
+}
+
+ul li ul li a:hover{
+	color: lightcoral;
+}
+
+.container ul li ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #cccccc;
+}
+   
+.container ul li ul li{   
+    display: none;
+    margin-left: 0px;
+    padding-left: 0;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+.container ul li:hover ul li{
+	display:block;
+}
+
+
+
+
+/* footer */
+
+footer {
+    padding: 20px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+
+@media(max-width: 600px){
+    header #branding,
+/*
+    header nav,
+    header nav li,
+*/
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }        
+    
+    
+    
+    
+/*    header #branding,*/
+    header nav,
+    header nav li{
+/*        float: right;*/
+        text-align: center;
+        width: 100%;
+/*
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+*/
+    }
+    
+    
+    #branding h1{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    
+    .container ul li{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    ul#fund li{
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h3 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    
+    #showcase p{
+        font-size: 15px;
+    }
+
+    #newsletter button
+        {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #newsletter form input[type="password"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #newsletter h3{
+        float: none;
+        text-align: center;
+        padding-left: 12px;
+        width: 90%;
+    }
+    
+    #sidebar button{
+        font-size: 15px;
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    section#signin div.formarea{
+        width: 95%;
+        transform: translate(-50%,0);
+        margin-top: 100px;
+    }
+    
+}
